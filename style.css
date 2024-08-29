@@ -24,3 +24,9 @@ section {
 .chamada-texto {
     margin: 5%;
 }
+
+img {
+    width: 200px;
+    height: auto;
+
+}
