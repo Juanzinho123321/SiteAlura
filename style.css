@@ -1,59 +1,190 @@
 body {
     color: white;
-    background:black;
-    margin: 2px;
+    background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+    margin: 0;
     font-family: "Chakra Petch", sans-serif;
-    margin-bottom: 100px;
+    overflow-x: hidden;
 }
 
 header {
+    position: relative;
     text-align: center;
-    margin: 0px;
-    padding: 30px;
-    font-size: 37px;
-    color: rgba(255, 255, 255, 0.651);
+    margin: 0;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 48px;
+    margin: 10px 0;
 }
 
 .chamada {
-    background: rgb(150,164,191);
-    padding-bottom: 50px;
-    padding-top: 50px;
+    background: rgba(150, 164, 191, 0.8);
+    border: 2px solid rgba(27, 5, 88, 0.719);
+    padding: 50px 20px;
     display: flex;
-    justify-content: center;
-    border: 2px solid rgba(27, 5, 88, 0.719)
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s forwards;
 }
 
-.chamada-texto {
-    margin: 5%;
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.video-container {
+    margin-top: 20px;
+}
+
+.categoria {
+    padding: 40px;
+    margin-top: 70px;
+    background: rgba(50, 50, 50, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.categoria h2 {
+    color: rgb(72, 89, 124);
+    opacity: 0.9;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .categoria-videos {
     display: flex;
     overflow-x: auto;
-    gap: 10px;
+    gap: 20px;
+    justify-content: center;
+    padding: 10px;
 }
 
-.categoria {
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-top: 70px;
+.categoria-videos a {
+    text-decoration: none;
+}
+
+.categoria-videos .video-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 200px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.categoria-videos .video-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
 
 .categoria-videos img {
-    opacity: 0.5;
-    height: 150px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
 }
 
-.categoria-videos img:hover {
-    opacity: 1.0;
-    border: 1px solid rgb(63, 39, 129) ;
+.categoria-videos .video-title {
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    background: rgba(0, 0, 0, 0.7);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.categoria h2 {
-    color: rgb(72, 89, 124);
-    opacity: 0.5;
+.sobre {
+    padding: 40px;
+    background: rgba(50, 50, 50, 0.8);
+    border-radius: 10px;
+    margin: 20px;
+    text-align: center;
 }
 
-.categoria h2:hover {
-    opacity : 1.0;
+.contato {
+    padding: 40px;
+    background: rgba(50, 50, 50, 0.8);
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.contato form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contato label {
+    color: white;
+}
+
+.contato input, .contato textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contato button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contato button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.social-buttons {
+    margin-top: 10px;
+}
+
+.social-button {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    background: #007BFF;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.social-button:hover {
+    background: #0056b3;
 }
