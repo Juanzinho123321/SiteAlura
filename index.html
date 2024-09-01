@@ -1,112 +1,81 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Metafísico</title>
+    <title>Metafisico</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;600&display=swap" rel="stylesheet" />
-    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
-    <script>
-        function enviarComentario(event) {
-            event.preventDefault(); // Impede o envio padrão do formulário
-            const nome = document.getElementById('nome').value;
-            const comentario = document.getElementById('comentario').value;
-            alert(`Obrigado pelo seu comentário, ${nome}!`);
-            // Aqui você pode adicionar lógica para armazenar ou enviar o comentário
-            document.getElementById('nome').value = '';
-            document.getElementById('comentario').value = '';
-        }
-    </script>
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Início</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#videos">Vídeos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-        <h1>Universo Questionável</h1>
-    </header>
+  <body>
+    <header>Universo Questionavel</header>
 
-    <section class="chamada" id="home">
-        <div class="chamada-texto">
-            <h1>O que seria a grande teoria da Floresta Negra?</h1>
-            <p>#ciências</p>
-        </div>
-        <div class="video-container">
-            <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/NWbPmXmF3Vk?si=FjTsAx2T2eERmlew"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen>
-            </iframe>
-        </div>
+    <section class="chamada">
+      <div class="chamada-texto">
+        <h1>O que seria a grande teoria da Floresta Negra?</h1>
+        <p1>#ciencias</p1>
+      </div>
+
+      <div>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/NWbPmXmF3Vk?si=FjTsAx2T2eERmlew"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
     </section>
 
-    <section class="categoria" id="videos">
-        <h2>Planetas e Galáxia</h2>
-        <div class="categoria-videos">
-            <a href="https://www.youtube.com/watch?v=5XEKoy3ULLg" class="video-card">
-                <img src="https://img.youtube.com/vi/5XEKoy3ULLg/maxresdefault.jpg" alt="Planetas" />
-                <div class="video-title">Planetas</div>
-            </a>
-            <a href="https://www.youtube.com/watch?v=lNbfmoSx1Sc" class="video-card">
-                <img src="https://img.youtube.com/vi/lNbfmoSx1Sc/maxresdefault.jpg" alt="Planetas" />
-                <div class="video-title">Planetas</div>
-            </a>
-            <a href="https://www.youtube.com/watch?v=XidS8iZpI0k" class="video-card">
-                <img src="https://img.youtube.com/vi/XidS8iZpI0k/maxresdefault.jpg" alt="Planetas" />
-                <div class="video-title">Planetas</div>
-            </a>
-            <a href="https://www.youtube.com/watch?v=WdXQabecaEs" class="video-card">
-                <img src="https://img.youtube.com/vi/WdXQabecaEs/maxresdefault.jpg" alt="Planetas" />
-                <div class="video-title">Planetas</div>
-            </a>
-            <a href="https://www.youtube.com/watch?v=-iT09map62w" class="video-card">
-                <img src="https://img.youtube.com/vi/-iT09map62w/maxresdefault.jpg" alt="Planetas" />
-                <div class="video-title">Planetas</div>
-            </a>
-            <a href="https://www.youtube.com/watch?v=GgZCN4VJQ-M" class="video-card">
-                <img src="https://img.youtube.com/vi/GgZCN4VJQ-M/maxresdefault.jpg" alt="Planetas" />
-                <div class="video-title">Planetas</div>
-            </a>
-        </div>
+    <section class="categoria">
+      <h2>Planetas e Galáxia</h2>
+      <div class="categoria-videos">
+        <a href="https://www.youtube.com/watch?v=5XEKoy3ULLg">
+          <img
+            src="https://img.youtube.com/vi/5XEKoy3ULLg/maxresdefault.jpg"
+            alt="Planetas"
+          />
+        </a>
+        <a href="https://www.youtube.com/watch?v=lNbfmoSx1Sc">
+          <img
+            src="https://img.youtube.com/vi/lNbfmoSx1Sc/maxresdefault.jpg"
+            alt="Planetas"
+          />
+        </a>
+        <a href="https://www.youtube.com/watch?v=XidS8iZpI0k">
+          <img
+            src="https://img.youtube.com/vi/XidS8iZpI0k/maxresdefault.jpg"
+            alt="Planetas"
+          />
+        </a>
+        <a href="https://www.youtube.com/watch?v=WdXQabecaEs">
+          <img
+            src="https://img.youtube.com/vi/WdXQabecaEs/maxresdefault.jpg"
+            alt="Planetas"
+          />
+        </a>
+        <a href="https://www.youtube.com/watch?v=-iT09map62w">
+          <img
+            src="https://img.youtube.com/vi/-iT09map62w/maxresdefault.jpg"
+            alt="Planetas"
+          />
+        </a>
+        <a href="https://www.youtube.com/watch?v=GgZCN4VJQ-M">
+          <img
+            src="https://img.youtube.com/vi/GgZCN4VJQ-M/maxresdefault.jpg"
+            alt="Planetas"
+          />
+        </a>
+      </div>
     </section>
-
-    <section class="sobre" id="sobre">
-        <h2>Sobre Nós</h2>
-        <p>Bem-vindo ao Universo Questionável, onde exploramos os mistérios do cosmos e as teorias que nos cercam. Junte-se a nós nessa jornada de conhecimento!</p>
-    </section>
-
-    <section class="contato" id="contato">
-        <h2>Comentários</h2>
-        <form onsubmit="enviarComentario(event)">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
-            <label for="comentario">Comentário:</label>
-            <textarea id="comentario" name="comentario" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
-
-    <footer>
-        <p>Compartilhe nas redes sociais:</p>
-        <div class="social-buttons">
-            <a href="https://www.facebook.com/sharer/sharer.php?u=URL_DO_SEU_SITE" class="social-button" target="_blank">Facebook</a>
-            <a href="https://twitter.com/intent/tweet?url=URL_DO_SEU_SITE" class="social-button" target="_blank">Twitter</a>
-            <a href="https://www.instagram.com/?url=URL_DO_SEU_SITE" class="social-button" target="_blank">Instagram</a>
-        </div>
-    </footer>
-</body>
+  </body>
 </html>
